@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<style type="text/css">
+	  table{
+	  	border-collapse: collapse;
+	  	ba
+	  }
+	</style>
+</head>
+<body onload="bipana()">
+	<table border="1">
+		<tr>
+           <th rowspan="2">s.n</th>
+           <th colspan="2">name</th>
+           <th rowspan="2">marks</th>
+		</tr>
+		<tr>
+			<th>frist name</th>
+			<th>last name</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>roshani</td>
+			<td>pun</td>
+			<td>65</td>
+		</tr>
+		<tr>
+		   <td>2</td>
+		   <td>bipana</td>
+		   <td>chapain</td>
+		   <td>50</td>
+	    </tr> 
+	    <tr>
+	    	<td>3</td>
+	    	<td>parkrit</td>
+	    	<td>adikhari</td>
+	    	<td>34</td>
+	    </tr>
+	</table>
+
+</body>
+<script type="text/javascript">
+	function bipana() {
+		var a= document.querySelectorAll("td");
+	    var length=a.length;
+	    for(i=0;i<=length;i++)
+	    {
+	    	/*if (a=>45) {
+	    		document.getElementsByTagName('td').style.background-color="red";
+	    	}
+	    	else{
+	    		document.getElementsByTagName('td').style.background-color="green";
+	    	}*/
+	    	var value=a.vaue;
+
+
+	    }
+	    console.log(value);
+	}
+</script>
+</html>

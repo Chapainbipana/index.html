@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+    <style type="text/css">
+    	.{box-sizing: border-box;}
+    	.cal{
+
+    		/*width: 500px;*/
+    		/*height: 700px;*/
+    		max-height: 600px;
+    		max-width: 500px;
+    		margin: 50px;50px 50px 50px ;
+    		border-radius: 10px;
+    		overflow: hidden;
+    	    box-shadow: 0 0 5px green;
+
+
+    	}
+    	.screen
+    	{
+                 background-color: orange;
+                 width: 100%;
+                 min-height: 100px;
+    	         text-align: right;
+    	         font-size: 36px;
+    	         padding:10px;
+    	}
+    	.cal-buttons
+    	{
+          background-color: red;    
+         padding:15px;
+    	}
+    	ul#buttons{
+    		list-style-type: none;
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+    	}
+    	ul#buttons li
+    	{
+          /*font-size: 24px;*/
+          color: #0000000;
+          background: white;
+    	  width: 20%;
+    	  margin:5px 2.5%;
+    	  padding-top: 11px;
+    	  height: 50px;
+    	  border-radius: 50%;
+    	  font-weight: bold;
+    	  cursor: pointer;
+    	  text-align: center;
+    	  transition: all ;
+    	}
+    	ul#buttons li:hover
+    	{
+           background-color: #ffffffff;
+           color:red;
+    	}
+    	ul#buttons li:visited
+    	{
+          background-color: #7777777;
+    	  color:pink;
+    	}
+        ul#buttons li:active{
+         background-color: green;
+
+        }
+        li#equal{
+        	width: 100% !important;
+        	border-radius: 10px !important;
+        }
+    </style>
+</head>
+<body>
+	<div class="cal">
+		<div class="screen">
+			<h1 id="result">0</h1>
+	    </div>
+          <div class="cal-buttons">
+            <ul id="buttons">   	  
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li type="reset">clear</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>+</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>-</li>
+              <li>0</li>
+              <li>*</li>
+              <li>/</li>
+              <li>.</li>
+              <li id="equal">=</li>
+            </ul>
+        </div>
+
+	</div>
+  <script type="text/javascript">
+  	var buttons = document.getElementById("buttons");
+  	var li = document.querySelectorAll("li");
+    var result= document.getElementById("result");
+
+
+         console.log(li);
+
+    for(let i=0;i=li.length;i++)
+    	 {
+    		li[i].addEventListener("click",function(){
+        
+          alert(this.innerHTML);
+        });
+        }
+  </script>
+</body>
+</html>

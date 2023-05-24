@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+	enter the name:<input type="text" name="username" id="frist">
+    <input type="submit" value="submit" onclick="itsfunction()">
+</body>
+<script type="text/javascript">
+	function itsfunction(){
+		var string=document.getElementById("frist").value;
+		 var strg=string.length;
+		 var out="";
+		 for(i=strg-1;i>=0;i--)
+		 {
+		 	var s=string.substr(i,1);
+		  out=out+s;
+		  }
+		  console.log(out);
+	}
+</script>
+</html>
